@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+  background: #2b2b2b;
+  color: white;
+  font-family: 'helvetica neue', sans-serif;
+  font-size: 1.3em;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  max-width: 35em;
+  margin: auto;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+#button,
+#userInput {
+  padding: 0 1em;
+  outline: none;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 3em;
+  border: none;
+}
+#button {
+  background-color: #0ed085;
+  color: white;
+}
+#userInput {
+  width: auto;
+  max-width: 100%;
+}
+#result {
+  font-weight: bold;
+  padding: 1.2em;
+}
+@media only screen and (max-width: 477px) {
+  form {
+    flex-direction: column;
+  }
+}
